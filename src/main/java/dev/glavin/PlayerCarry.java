@@ -65,6 +65,7 @@ public class PlayerCarry implements ModInitializer {
 		}
 
 		target.sendSystemMessage(Component.literal("You are being carried. Press Shift to dismount."));
+		carrier.sendSystemMessage(Component.literal("You are carrying " + target.getName() + "."));
 		return InteractionResult.SUCCESS;
 	}
 
